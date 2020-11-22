@@ -1,3 +1,7 @@
+# bsx
+
+Quickly add deps to bsconfig.json
+
 # Installation
 
 Clone the repo or copy the script and put it in your path.
