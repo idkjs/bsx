@@ -1,0 +1,36 @@
+{
+  "name": "bsx",
+  "version": "1.0.0",
+  "description": "Quickly add deps to bsconfig.json",
+  "main": "bsx.sh",
+  "bin": "bsx.sh",
+  "scripts": {
+    "start": "sh bsx.sh",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags",
+    "release": "npmpub"
+  },
+  "keywords": [
+    "bsx",
+    "bsconfig",
+    "reason",
+    "reasonml",
+    "ocaml",
+    "cli",
+    "rescript"
+  ],
+  "author": "Alain Armand",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idkjs/bsx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/idkjs/bsx/issues"
+  },
+  "homepage": "https://github.com/idkjs/bsx#readme",
+  "devDependencies": {
+    "npmpub": "^5.0.0"
+  }
+}
